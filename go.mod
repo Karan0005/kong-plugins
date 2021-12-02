@@ -1,4 +1,4 @@
-module clientpoint-kong-plugins
+module kong-plugins
 
 go 1.16
 
