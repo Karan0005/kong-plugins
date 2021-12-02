@@ -1,0 +1,17 @@
+# go.yml
+_format_version: "1.1"
+services:
+  - name: auth-service
+    url: http://192.168.1.2:3000/auth
+    routes:
+      - paths:
+          - "/auth"
+    plugins:
+      - name: auth-plugin
+  - name: correlation-service
+    url: http://192.168.1.2:3000/correlation
+    routes:
+      - paths:
+          - "/correlation"
+    plugins:
+      - name: correlation-plugin
